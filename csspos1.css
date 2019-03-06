@@ -1,0 +1,52 @@
+/* 法一 */
+/* .penal {
+    background: yellow;
+    overflow: hidden;
+  }
+  .left {
+    float:left;
+    width: 100px;
+    background: blue;
+    height: 100%;
+  }
+  .right{
+      margin-left: 100px;
+    background: red;
+    text-align:center;
+    width: calc(100%-100px);
+  } */
+
+  /* 法二 */
+/* .penal{
+    position: relative;
+    background-color: blue;
+    width: 500px;
+    overflow: auto;
+}
+.left{
+    position: absolute;
+    float: left;
+    width: 100px;
+    background-color: aquamarine;
+}
+ .right{
+     margin-left: 100px;
+     background-color: brown;
+ } */
+
+ /* 法三  最简单的flex */
+.penal{
+    background-color: antiquewhite;
+    overflow: hidden;
+    display: flex;
+}
+.left{
+    background-color: aquamarine;
+    width: 100px;
+}
+.right{
+    background-color: burlywood;
+    text-align: center;
+    padding-top: 50px;
+    flex:auto;
+}
